@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>พ่อบ้านจอมมาร (Demon King's Butler) - อ่านนิยายออนไลน์</title>
+  <meta name="description" content="เว็บไซต์สำหรับอ่านนิยายเรื่อง พ่อบ้านจอมมาร ผลงานสร้างสรรค์สุดน่ารักระหว่างนักเขียนและ AI อ่านง่าย สบายตา พร้อมระบบปรับแต่งตามใจชอบ">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo" id="logo-btn">
+        <span>💜</span> พ่อบ้านจอมมาร
+      </a>
+      <nav class="header-nav">
+        <button class="nav-btn active" id="btn-home">หน้าหลัก</button>
+        <button class="nav-btn" id="btn-chapters">ตอนทั้งหมด</button>
+        <button class="nav-btn" id="btn-behind">เบื้องหลัง & Q&A</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- SECTION: HOME -->
+    <section id="section-home" class="section active">
+      <div class="hero-banner">
+        <div class="cover-wrapper">
+          <img class="cover-img" src="assets/cover.jpg" alt="พ่อบ้านจอมมาร Cover" onerror="this.src='https://placehold.co/350x460/201235/ea80fc?text=%E0%B8%9E%E0%B9%80%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%A1%E0%B8%B2%E0%B8%A3'">
+        </div>
+        <div class="novel-details">
+          <h1 class="novel-title-th">พ่อบ้านจอมมาร</h1>
+          <h2 class="novel-title-en">Demon King's Butler</h2>
+          <div class="meta-info">
+            <span class="meta-tag">แนว: แฟนตาซี / คอเมดี้ / BL</span>
+            <span class="meta-tag">สถานะ: กำลังอัปเดต</span>
+            <span class="meta-tag">ผู้เขียน: AI & ME</span>
+          </div>
+          <p class="synopsis">
+            เรื่องราวสุดป่วนเมื่อ <strong>"ยูคิฮิโระ"</strong> ผู้กล้าอัจฉริยะผู้ทำภารกิจปราบจอมมารสำเร็จ
+            แต่แทนที่จะสังหารเขากลับลักพาตัว <strong>"จอมมารมาโอะ"</strong> ข้ามมิติมายังโลกมนุษย์! 
+            แถมยังจับเขาแปลงโฉมเป็นเด็กหนุ่มผมเงินสุดน่ารักในฐานะ <strong>"พ่อบ้านประจำตัว"</strong> 
+            จอมมารผู้ไม่คุ้นเคยกับเทคโนโลยีและวัฒนธรรมมนุษย์จะเอาชีวิตรอดในโรงเรียนมัธยมปลายและคฤหาสน์สุดหรูได้อย่างไร? 
+            และแผนการลับๆ ของคุณหนูจอมเผด็จการคืออะไรกันแน่? ติดตามความน่ารักได้ในเรื่องเลยครับ!
+          </p>
+          <div class="action-buttons">
+            <button class="primary-btn" id="btn-start-read">เริ่มอ่านตอนแรก</button>
+            <button class="secondary-btn" onclick="document.getElementById('btn-chapters').click();">เลือกตอน</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Character Profiles -->
+      <div class="characters-container">
+        <h2 class="section-title">แนะนำตัวละครหลัก</h2>
+        <div class="characters-grid" id="characters-grid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CHAPTERS LIST -->
+    <section id="section-chapters" class="section">
+      <div class="chapters-section">
+        <h2 class="section-title">รายชื่อตอนทั้งหมด</h2>
+        <div class="search-bar">
+          <input type="text" class="search-input" id="search-input" placeholder="ค้นหาตอน หรือเนื้อหาภายในตอน...">
+          <span class="search-icon">🔍</span>
+        </div>
+        <div class="chapters-grid" id="chapters-grid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: BEHIND THE SCENES & Q&A -->
+    <section id="section-behind" class="section">
+      <div class="chapters-section" style="max-width: 1000px; margin: 0 auto; padding: 2rem;">
+        <h2 class="section-title">เบื้องหลังความบันเทิง</h2>
+        
+        <!-- Author Note -->
+        <div style="background: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; margin-bottom: 3rem;">
+          <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">✍️ จากใจผู้เขียน</h3>
+          <p style="line-height: 1.8; margin-bottom: 1rem; text-indent: 1.5rem; color: var(--text-color);">
+            สวัสดีนักอ่านทุกท่านครับ ก่อนที่เราจะสนุกกับเรื่องราวความวายป่วงของพวกเราในเรื่อง... บอกตามตรงเลยนะครับว่า นิยายเรื่องนี้เป็นผลงานที่ผมใช้ <strong>"AI (Gemini) เข้ามาช่วยแต่ง"</strong> ครับ 
+            หลายคนอาจจะรู้สึกเอ๊ะหรือมีอคติกับนิยายที่ใช้ปัญญาประดิษฐ์ช่วยเขียน ซึ่งผมเข้าใจในจุดนี้เป็นอย่างดี แต่ผมอยากขออธิบายเหตุผลสักนิดว่าทำไมผมถึงพึ่งพามัน...
+          </p>
+          <p style="line-height: 1.8; margin-bottom: 1rem; text-indent: 1.5rem; color: var(--text-color);">
+            ความจริงคือผมเป็นคนที่มีภาพเนื้อเรื่องและพล็อตจินตนาการโลดแล่นในหัวเยอะมาก แต่พอถึงเวลาที่ต้องมานั่งเรียบเรียงเขียนออกมาจริงๆ ผมกลับพบว่าตัวเองไม่มีคลังคำศัพท์ที่สละสลวย 
+            และการมี AI เข้ามาช่วยรับไม้ต่อจากจินตนาการดิบๆ ของผม มันจึงช่วยส่งเสริมให้นิยาย <strong>"พ่อบ้านจอมมาร"</strong> นี้สามารถสร้างเป็นรูปเป็นร่างขึ้นมาได้อย่างเสถียรที่สุด 
+            ดังนั้น หากมีจุดไหนที่ดูเอ๊ะไปบ้างหรือมีความกาว โก๊ะๆ หลุดมา ก็อยากชวนให้ทุกท่านปลดปล่อยสมองแล้วขำไปกับมันนะครับ!
+          </p>
+        </div>
+
+        <!-- Read Full Version Call-to-Action -->
+        <div style="background: linear-gradient(135deg, var(--accent-glow) 0%, hsla(270, 75%, 65%, 0.05) 100%); border: 1px dashed var(--accent-color); border-radius: 16px; padding: 2.5rem; margin-bottom: 3rem; text-align: center;">
+          <h3 style="color: var(--accent-color); font-size: 1.6rem; margin-bottom: 0.8rem;">🚀 ติดตามนิยายฉบับเต็มกว่า 1,000 ตอน!</h3>
+          <p style="color: var(--text-color); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            ตัวอย่างบนเว็บนี้เป็นเพียงส่วนเริ่มแรกของนิยายหลักเท่านั้น สำหรับท่านที่ถูกความน่ารักของมาโอะตก <br>
+            และอยากติดตามการผจญภัยสุดวายป่วงต่อในฉบับสมบูรณ์ (Gemini Version) สามารถตามไปเปย์และอ่านต่อได้ทันที!
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="https://fictionlog.co" target="_blank" class="primary-btn" style="text-decoration: none; padding: 0.8rem 2rem;">ไปอ่านที่ Fictionlog</a>
+            <a href="https://www.readawrite.com" target="_blank" class="secondary-btn" style="text-decoration: none; padding: 0.8rem 2rem; border-color: var(--accent-color); color: var(--accent-color);">ไปอ่านที่ readAwrite</a>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+            🔍 ค้นหาคำว่า <strong>"พ่อบ้านจอมมาร"</strong> บนทุกแพลตฟอร์มได้เลยครับ!
+          </p>
+        </div>
+
+        <!-- Platform Multiverse Table/Grid -->
+        <h3 style="color: var(--accent-color); font-size: 1.3rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">📖 แหล่งกาวในมัลติเวิร์สต่าง ๆ (Platform Guide)</h3>
+        <div class="chapters-grid" style="margin-bottom: 3rem;">
+          <div class="chapter-card-link" style="cursor: default;">
+            <span class="chapter-number">1. จอยลดา (Joylada)</span>
+            <span class="chapter-title" style="font-size: 1rem; color: var(--text-color);">งานเขียนฝีมือมนุษย์ล้วน 100% (Original Prompt)</span>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-top: 0.5rem;">เป็นภาษาดิบและพล็อตเริ่มแรกที่พิมพเพื่อเตรียมส่งไปสั่งให้ AI เกลาต่อในอนาคต</p>
+          </div>
+          <div class="chapter-card-link" style="cursor: default;">
+            <span class="chapter-number">2. ธัญวลัย (Tunwalai)</span>
+            <span class="chapter-title" style="font-size: 1rem; color: var(--text-color);">ยุคบุกเบิกกับ ChatGPT (Multi-Personality)</span>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-top: 0.5rem;">สำนวนมีความแปลกใหม่หลากหลายในแต่ละตอน เหมือนมีนักเขียน 10 คนช่วยกันแต่ง</p>
+          </div>
+          <div class="chapter-card-link" style="cursor: default;">
+            <span class="chapter-number">3. Dek-D (เด็กดี)</span>
+            <span class="chapter-title" style="font-size: 1rem; color: var(--text-color);">เขตแดนพหุจักรวาล (The "What If" Zone)</span>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-top: 0.5rem;">เน้นลงตอนพิเศษ และสปินออฟเนื้อหานอกบทหลักสำหรับสายกาวโดยเฉพาะ</p>
+          </div>
+        </div>
+
+        <!-- Behind Character Q&A -->
+        <h3 style="color: var(--accent-color); font-size: 1.3rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">💬 เบื้องหลังความลับ & บทสัมภาษณ์ตัวละคร</h3>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="background: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+            <h4 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem;">❓ ทำไมคิดว่านิยายเรื่องนี้ "กาว"?</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; text-indent: 1rem;">
+              ก็เพราะพล็อตมันทะลุขอบเขตของแฟนตาซีไปไกลครับ เริ่มจากผู้กล้าไม่ยอมฆ่าจอมมารเพราะเบื่อบทละครซ้ำซาก ชวนจอมมารข้ามมิติมาอยู่ญี่ปุ่น ทำสัญญาทาสเพื่อความปลอดภัยจนบีบอัดจอมมารตัวยักษ์ให้เหลือร่างน้องนุ่มฟูสูงน้อยกว่าพระเอก คอยถือไม้ขนไก่กวาดบ้าน และแช่ออนเซ็นด้วยกันนั่นแหละครับ!
+            </p>
+          </div>
+          
+          <div style="background: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+            <h4 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem;">❓ ทำไมต้องเรียก "คิริว" ว่า "กุนซือเดอะแบก"?</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; text-indent: 1rem;">
+              เพราะคิริวคอยแบกรับเรื่องราวความปั่นป่วนของสองตัวหลักเกือบทั้งหมด เป็นคนคอยแปลภาษา คอยสอนมาโอะใช้ชีวิตเรื่องง่ายๆ อย่างการกินแฮมเบอร์เกอร์หรือการแช่น้ำร้อน และยังต้องมาทำหน้าที่เป็นพ่อสื่อคอยพายเรือและหาวิธีเอาตัวรอดจากการตกเป็นเป้าสายตาของจอมมารรุ่นก่อนๆ อีกด้วยครับ!
+            </p>
+          </div>
+
+          <div style="background: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+            <h4 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem;">❓ ความลับของคิริวเกี่ยวกับ "อดีตชาติ" และโรค "Imposter Syndrome"?</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; text-indent: 1rem;">
+              คิริวมีความทรงจำจากต่างโลกติดตัวมาตั้งแต่เกิด ทำให้เขารู้เรื่องและประเพณีต่างโลกดี (แม้คนอื่นจะมองว่าเขาเป็นแค่โอตาคุก็ตาม) และในอดีตชาติเขาเคยเป็นแฟนกับจอมมารรุ่น 1 "พรีโม่" แต่ตอนจบกลับไม่ค่อยสวยงาม ในชาตินี้คิริวจึงพยายามทำตัวจืดชืด แกล้งโง่ และรักษาสถานะคนจืดตาปลาตายเพื่อไม่ให้พรีโม่เห็นภาพซ้อนของอดีตชาติ เพราะเขากลัวจะเสียเพื่อนแรกในชีวิตอย่างมาโอะไปนั่นเองครับ
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: READER VIEW -->
+    <section id="section-reader" class="section">
+      <div class="reader-section">
+        <div class="reader-container">
+          <div class="reader-title-area">
+            <div id="reader-chapter-num" class="reader-chapter-num">ตอนที่ 1</div>
+            <h1 id="reader-chapter-title" class="reader-chapter-title">ชื่อตอน</h1>
+          </div>
+          
+          <!-- Article text container -->
+          <article id="reader-content" class="reader-content">
+            <!-- Populated by app.js -->
+          </article>
+
+          <!-- Navigation Footer -->
+          <div class="reader-nav">
+            <button class="secondary-btn" id="btn-prev">⬅ ตอนก่อนหน้า</button>
+            <button class="secondary-btn" id="btn-back-home">กลับหน้าหลัก</button>
+            <button class="primary-btn" id="btn-next">ตอนถัดไป ➔</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sticky Reader Toolbar -->
+      <div class="reader-toolbar">
+        <div class="toolbar-group">
+          <span style="font-size: 0.85rem; opacity: 0.8;">ธีม:</span>
+          <div class="theme-selector">
+            <span class="theme-dot dark active" id="theme-dot-dark" title="Dark Mode"></span>
+            <span class="theme-dot light" id="theme-dot-light" title="Light Mode"></span>
+            <span class="theme-dot sepia" id="theme-dot-sepia" title="Sepia Mode"></span>
+          </div>
+        </div>
+        
+        <div class="toolbar-divider"></div>
+
+        <div class="toolbar-group">
+          <span style="font-size: 0.85rem; opacity: 0.8;">อักษร:</span>
+          <button class="toolbar-btn" id="btn-font-dec" title="ลดขนาดอักษร">A-</button>
+          <button class="toolbar-btn" id="btn-font-inc" title="เพิ่มขนาดอักษร">A+</button>
+          <select id="font-family-select" class="nav-btn" style="padding: 0.2rem 0.5rem; background: var(--bg-panel); border: 1px solid var(--border-color); color: var(--text-color); font-size: 0.9rem; border-radius: 6px; cursor: pointer;">
+            <option value="Sarabun">Sarabun (ทางการ)</option>
+            <option value="Noto Sans Thai">Noto Sans (โมเดิร์น)</option>
+            <option value="Thasadith">Thasadith (คลาสสิก)</option>
+          </select>
+        </div>
+
+        <div class="toolbar-divider"></div>
+
+        <div class="toolbar-group">
+          <span style="font-size: 0.85rem; opacity: 0.8;">อ่านออกเสียง:</span>
+          <button class="toolbar-btn" id="btn-tts-play" title="ฟังเสียงอ่าน">🔊</button>
+          <button class="toolbar-btn" id="btn-tts-stop" title="หยุดฟัง" style="display: none;">⏹️</button>
+          <select id="tts-voice-select" class="nav-btn" style="padding: 0.2rem 0.5rem; background: var(--bg-panel); border: 1px solid var(--border-color); color: var(--text-color); font-size: 0.9rem; border-radius: 6px; cursor: pointer; max-width: 120px;" title="เลือกเสียงอ่าน">
+            <option value="">(อัตโนมัติ)</option>
+          </select>
+          <select id="tts-rate-select" class="nav-btn" style="padding: 0.2rem 0.5rem; background: var(--bg-panel); border: 1px solid var(--border-color); color: var(--text-color); font-size: 0.9rem; border-radius: 6px; cursor: pointer; width: 60px;">
+            <option value="0.8">0.8x</option>
+            <option value="1.0" selected>1.0x</option>
+            <option value="1.2">1.2x</option>
+            <option value="1.5">1.5x</option>
+          </select>
+        </div>
+
+        <div class="toolbar-divider"></div>
+
+        <div class="toolbar-group" style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 0.85rem; opacity: 0.8; white-space: nowrap;">ความกว้าง:</span>
+          <input type="range" id="width-slider" min="500" max="1000" step="50" style="width: 80px; cursor: pointer; accent-color: var(--accent-color);">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bookmark Resume Toast -->
+  <div class="resume-toast" id="resume-toast">
+    <div class="resume-toast-header" id="resume-toast-title">อ่านค้างไว้ที่...</div>
+    <div class="resume-toast-body">คุณต้องการเปิดหน้าอ่านนิยายเพื่ออ่านต่อจากตอนเดิมเลยหรือไม่?</div>
+    <div class="resume-toast-actions">
+      <button class="toast-btn decline" id="btn-resume-decline">ไม่ใช่</button>
+      <button class="toast-btn accept" id="btn-resume-accept">อ่านต่อเลย</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="chapters.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Logo button returns home
+    document.getElementById('logo-btn').addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById('btn-home').click();
+    });
+  </script>
+</body>
+</html>
