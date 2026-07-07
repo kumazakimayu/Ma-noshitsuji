@@ -1,2 +1,2 @@
-# Ma-noshitsuji
+# Maonoshitsuji
 The Demon Lord's Butler
